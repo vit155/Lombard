@@ -30,6 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.thingidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ownertaxidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assetnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estimatedcostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.acceptancedateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.issuedsumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buyoutdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buyoutsumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.forcesaledateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.forcesalesumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thingDataTableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.lombardDataSet = new Lombard.LombardDataSet();
             this.client_comboBox = new System.Windows.Forms.ComboBox();
@@ -62,18 +74,6 @@
             this.only_outdated_checkBox = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.customerDataTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.thingidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ownertaxidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assetnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estimatedcostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.acceptancedateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.issuedsumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buyoutdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buyoutsumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.forcesaledateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.forcesalesumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thingDataTableBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lombardDataSet)).BeginInit();
@@ -110,6 +110,114 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // thingidDataGridViewTextBoxColumn
+            // 
+            this.thingidDataGridViewTextBoxColumn.DataPropertyName = "thing_id";
+            this.thingidDataGridViewTextBoxColumn.HeaderText = "ID майна";
+            this.thingidDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.thingidDataGridViewTextBoxColumn.Name = "thingidDataGridViewTextBoxColumn";
+            this.thingidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.thingidDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // ownertaxidDataGridViewTextBoxColumn
+            // 
+            this.ownertaxidDataGridViewTextBoxColumn.DataPropertyName = "owner_tax_id";
+            this.ownertaxidDataGridViewTextBoxColumn.HeaderText = "ІНД властника";
+            this.ownertaxidDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.ownertaxidDataGridViewTextBoxColumn.Name = "ownertaxidDataGridViewTextBoxColumn";
+            this.ownertaxidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ownertaxidDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // assetnameDataGridViewTextBoxColumn
+            // 
+            this.assetnameDataGridViewTextBoxColumn.DataPropertyName = "asset_name";
+            this.assetnameDataGridViewTextBoxColumn.HeaderText = "Назва";
+            this.assetnameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.assetnameDataGridViewTextBoxColumn.Name = "assetnameDataGridViewTextBoxColumn";
+            this.assetnameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.assetnameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Статус";
+            this.statusDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.statusDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // estimatedcostDataGridViewTextBoxColumn
+            // 
+            this.estimatedcostDataGridViewTextBoxColumn.DataPropertyName = "estimated_cost";
+            this.estimatedcostDataGridViewTextBoxColumn.HeaderText = "Оцінка";
+            this.estimatedcostDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.estimatedcostDataGridViewTextBoxColumn.Name = "estimatedcostDataGridViewTextBoxColumn";
+            this.estimatedcostDataGridViewTextBoxColumn.ReadOnly = true;
+            this.estimatedcostDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // acceptancedateDataGridViewTextBoxColumn
+            // 
+            this.acceptancedateDataGridViewTextBoxColumn.DataPropertyName = "acceptance_date";
+            this.acceptancedateDataGridViewTextBoxColumn.HeaderText = "Дата прийомки";
+            this.acceptancedateDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.acceptancedateDataGridViewTextBoxColumn.Name = "acceptancedateDataGridViewTextBoxColumn";
+            this.acceptancedateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.acceptancedateDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // issuedsumDataGridViewTextBoxColumn
+            // 
+            this.issuedsumDataGridViewTextBoxColumn.DataPropertyName = "issued_sum";
+            this.issuedsumDataGridViewTextBoxColumn.HeaderText = "Надана сума";
+            this.issuedsumDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.issuedsumDataGridViewTextBoxColumn.Name = "issuedsumDataGridViewTextBoxColumn";
+            this.issuedsumDataGridViewTextBoxColumn.ReadOnly = true;
+            this.issuedsumDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // buyoutdateDataGridViewTextBoxColumn
+            // 
+            this.buyoutdateDataGridViewTextBoxColumn.DataPropertyName = "buyout_date";
+            this.buyoutdateDataGridViewTextBoxColumn.HeaderText = "Дата викупу";
+            this.buyoutdateDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.buyoutdateDataGridViewTextBoxColumn.Name = "buyoutdateDataGridViewTextBoxColumn";
+            this.buyoutdateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.buyoutdateDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // buyoutsumDataGridViewTextBoxColumn
+            // 
+            this.buyoutsumDataGridViewTextBoxColumn.DataPropertyName = "buyout_sum";
+            this.buyoutsumDataGridViewTextBoxColumn.HeaderText = "Сума викупу";
+            this.buyoutsumDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.buyoutsumDataGridViewTextBoxColumn.Name = "buyoutsumDataGridViewTextBoxColumn";
+            this.buyoutsumDataGridViewTextBoxColumn.ReadOnly = true;
+            this.buyoutsumDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // forcesaledateDataGridViewTextBoxColumn
+            // 
+            this.forcesaledateDataGridViewTextBoxColumn.DataPropertyName = "force_sale_date";
+            this.forcesaledateDataGridViewTextBoxColumn.HeaderText = "Кінцева дата зберігання";
+            this.forcesaledateDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.forcesaledateDataGridViewTextBoxColumn.Name = "forcesaledateDataGridViewTextBoxColumn";
+            this.forcesaledateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.forcesaledateDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // forcesalesumDataGridViewTextBoxColumn
+            // 
+            this.forcesalesumDataGridViewTextBoxColumn.DataPropertyName = "force_sale_sum";
+            this.forcesalesumDataGridViewTextBoxColumn.HeaderText = "Сума продажи після зберігання";
+            this.forcesalesumDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.forcesalesumDataGridViewTextBoxColumn.Name = "forcesalesumDataGridViewTextBoxColumn";
+            this.forcesalesumDataGridViewTextBoxColumn.ReadOnly = true;
+            this.forcesalesumDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Опис майна";
+            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            this.descriptionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.descriptionDataGridViewTextBoxColumn.Width = 150;
             // 
             // thingDataTableBindingSource2
             // 
@@ -262,7 +370,12 @@
             // 
             // status_comboBox
             // 
+            this.status_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.status_comboBox.FormattingEnabled = true;
+            this.status_comboBox.Items.AddRange(new object[] {
+            "Прийняте у залог",
+            "Викуплено властником",
+            "Викуплено невластником"});
             this.status_comboBox.Location = new System.Drawing.Point(94, 111);
             this.status_comboBox.Name = "status_comboBox";
             this.status_comboBox.Size = new System.Drawing.Size(218, 28);
@@ -394,114 +507,6 @@
             // 
             this.customerDataTableBindingSource.DataMember = "CustomerDataTable";
             this.customerDataTableBindingSource.DataSource = this.lombardDataSet;
-            // 
-            // thingidDataGridViewTextBoxColumn
-            // 
-            this.thingidDataGridViewTextBoxColumn.DataPropertyName = "thing_id";
-            this.thingidDataGridViewTextBoxColumn.HeaderText = "ID майна";
-            this.thingidDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.thingidDataGridViewTextBoxColumn.Name = "thingidDataGridViewTextBoxColumn";
-            this.thingidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.thingidDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // ownertaxidDataGridViewTextBoxColumn
-            // 
-            this.ownertaxidDataGridViewTextBoxColumn.DataPropertyName = "owner_tax_id";
-            this.ownertaxidDataGridViewTextBoxColumn.HeaderText = "ІНД властника";
-            this.ownertaxidDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.ownertaxidDataGridViewTextBoxColumn.Name = "ownertaxidDataGridViewTextBoxColumn";
-            this.ownertaxidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ownertaxidDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // assetnameDataGridViewTextBoxColumn
-            // 
-            this.assetnameDataGridViewTextBoxColumn.DataPropertyName = "asset_name";
-            this.assetnameDataGridViewTextBoxColumn.HeaderText = "Назва";
-            this.assetnameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.assetnameDataGridViewTextBoxColumn.Name = "assetnameDataGridViewTextBoxColumn";
-            this.assetnameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.assetnameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Статус";
-            this.statusDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.statusDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // estimatedcostDataGridViewTextBoxColumn
-            // 
-            this.estimatedcostDataGridViewTextBoxColumn.DataPropertyName = "estimated_cost";
-            this.estimatedcostDataGridViewTextBoxColumn.HeaderText = "Оцінка";
-            this.estimatedcostDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.estimatedcostDataGridViewTextBoxColumn.Name = "estimatedcostDataGridViewTextBoxColumn";
-            this.estimatedcostDataGridViewTextBoxColumn.ReadOnly = true;
-            this.estimatedcostDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // acceptancedateDataGridViewTextBoxColumn
-            // 
-            this.acceptancedateDataGridViewTextBoxColumn.DataPropertyName = "acceptance_date";
-            this.acceptancedateDataGridViewTextBoxColumn.HeaderText = "Дата прийомки";
-            this.acceptancedateDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.acceptancedateDataGridViewTextBoxColumn.Name = "acceptancedateDataGridViewTextBoxColumn";
-            this.acceptancedateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.acceptancedateDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // issuedsumDataGridViewTextBoxColumn
-            // 
-            this.issuedsumDataGridViewTextBoxColumn.DataPropertyName = "issued_sum";
-            this.issuedsumDataGridViewTextBoxColumn.HeaderText = "Надана сума";
-            this.issuedsumDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.issuedsumDataGridViewTextBoxColumn.Name = "issuedsumDataGridViewTextBoxColumn";
-            this.issuedsumDataGridViewTextBoxColumn.ReadOnly = true;
-            this.issuedsumDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // buyoutdateDataGridViewTextBoxColumn
-            // 
-            this.buyoutdateDataGridViewTextBoxColumn.DataPropertyName = "buyout_date";
-            this.buyoutdateDataGridViewTextBoxColumn.HeaderText = "Дата викупу";
-            this.buyoutdateDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.buyoutdateDataGridViewTextBoxColumn.Name = "buyoutdateDataGridViewTextBoxColumn";
-            this.buyoutdateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.buyoutdateDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // buyoutsumDataGridViewTextBoxColumn
-            // 
-            this.buyoutsumDataGridViewTextBoxColumn.DataPropertyName = "buyout_sum";
-            this.buyoutsumDataGridViewTextBoxColumn.HeaderText = "Сума викупу";
-            this.buyoutsumDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.buyoutsumDataGridViewTextBoxColumn.Name = "buyoutsumDataGridViewTextBoxColumn";
-            this.buyoutsumDataGridViewTextBoxColumn.ReadOnly = true;
-            this.buyoutsumDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // forcesaledateDataGridViewTextBoxColumn
-            // 
-            this.forcesaledateDataGridViewTextBoxColumn.DataPropertyName = "force_sale_date";
-            this.forcesaledateDataGridViewTextBoxColumn.HeaderText = "Кінцева дата зберігання";
-            this.forcesaledateDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.forcesaledateDataGridViewTextBoxColumn.Name = "forcesaledateDataGridViewTextBoxColumn";
-            this.forcesaledateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.forcesaledateDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // forcesalesumDataGridViewTextBoxColumn
-            // 
-            this.forcesalesumDataGridViewTextBoxColumn.DataPropertyName = "force_sale_sum";
-            this.forcesalesumDataGridViewTextBoxColumn.HeaderText = "Сума продажи після зберігання";
-            this.forcesalesumDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.forcesalesumDataGridViewTextBoxColumn.Name = "forcesalesumDataGridViewTextBoxColumn";
-            this.forcesalesumDataGridViewTextBoxColumn.ReadOnly = true;
-            this.forcesalesumDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Опис майна";
-            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            this.descriptionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.descriptionDataGridViewTextBoxColumn.Width = 150;
             // 
             // ThingForm
             // 
