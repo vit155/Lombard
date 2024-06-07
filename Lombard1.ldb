@@ -1,0 +1,101 @@
+<LombardDataSet xmlns="http://tempuri.org/LombardDataSet.xsd">
+  <CustomerDataTable>
+    <tax_id>1111111</tax_id>
+    <first_name>Іван</first_name>
+    <last_name>Лук'янчук</last_name>
+    <city>Полтава</city>
+    <address>Зелена 5</address>
+    <passport>МТ 02 04 55</passport>
+    <contact_data>(099) 5432789</contact_data>
+  </CustomerDataTable>
+  <CustomerDataTable>
+    <tax_id>22222222</tax_id>
+    <first_name>Федір</first_name>
+    <last_name>Гунько</last_name>
+    <city>Днепр</city>
+    <address>Жолта 5</address>
+    <passport>МС 02 05 55</passport>
+    <contact_data>(099) 123 4444</contact_data>
+  </CustomerDataTable>
+  <CustomerDataTable>
+    <tax_id>33333333</tax_id>
+    <first_name>Алекс</first_name>
+    <last_name>Фторов</last_name>
+    <city>Днепр</city>
+    <address>Синя 18</address>
+    <passport>МС 020777</passport>
+    <contact_data>(099) 123 4444</contact_data>
+  </CustomerDataTable>
+  <CustomerDataTable>
+    <tax_id>33333357</tax_id>
+    <first_name>Алекс1</first_name>
+    <last_name>Фторов12</last_name>
+    <city>Днепр</city>
+    <address>Синя 18</address>
+    <passport>МС 020777</passport>
+    <contact_data>(099) 123 4444</contact_data>
+  </CustomerDataTable>
+  <CustomerDataTable>
+    <tax_id>22222777</tax_id>
+    <first_name>Федір12</first_name>
+    <last_name>Гунько15</last_name>
+    <city>Днепр</city>
+    <address>Жолта 5</address>
+    <passport>МС 02 05 55</passport>
+    <contact_data>(099) 123 4444</contact_data>
+  </CustomerDataTable>
+  <ThingDataTable>
+    <thing_id>2</thing_id>
+    <owner_tax_id>1111111</owner_tax_id>
+    <asset_name>Айфон 15 Про</asset_name>
+    <status>аддед</status>
+    <estimated_cost>50</estimated_cost>
+    <acceptance_date>2024-06-08T00:00:00+02:00</acceptance_date>
+    <issued_sum>15</issued_sum>
+    <buyout_date>2024-06-08T00:00:00+02:00</buyout_date>
+    <buyout_sum>60</buyout_sum>
+    <force_sale_date>2024-06-03T00:00:00+02:00</force_sale_date>
+    <force_sale_sum>50</force_sale_sum>
+    <description>Гарний айфон</description>
+  </ThingDataTable>
+  <ThingDataTable>
+    <thing_id>3</thing_id>
+    <owner_tax_id>1111111</owner_tax_id>
+    <asset_name>Айфон 14 Про1</asset_name>
+    <status>аддед</status>
+    <estimated_cost>50</estimated_cost>
+    <acceptance_date>2024-06-08T00:00:00+02:00</acceptance_date>
+    <issued_sum>25</issued_sum>
+    <buyout_date>2024-06-08T00:00:00+02:00</buyout_date>
+    <buyout_sum>75</buyout_sum>
+    <force_sale_date>2024-06-30T00:00:00+02:00</force_sale_date>
+    <force_sale_sum>50</force_sale_sum>
+    <description>Гарний айфон</description>
+  </ThingDataTable>
+  <ThingDataTable>
+    <thing_id>4</thing_id>
+    <owner_tax_id>22222222</owner_tax_id>
+    <asset_name>Ноубук Асус</asset_name>
+    <status>прийнятий</status>
+    <estimated_cost>50</estimated_cost>
+    <acceptance_date>2024-06-01T00:00:00+02:00</acceptance_date>
+    <buyout_date>2024-06-20T00:00:00+02:00</buyout_date>
+    <buyout_sum>58</buyout_sum>
+    <force_sale_date>2024-05-31T00:00:00+02:00</force_sale_date>
+    <force_sale_sum>79</force_sale_sum>
+    <description>Тест опис</description>
+  </ThingDataTable>
+  <ThingDataTable>
+    <thing_id>5</thing_id>
+    <owner_tax_id>33333357</owner_tax_id>
+    <asset_name>HP laptop</asset_name>
+    <status>added</status>
+    <estimated_cost>100</estimated_cost>
+    <acceptance_date>2024-06-07T00:00:00+02:00</acceptance_date>
+    <buyout_date>2024-06-27T00:00:00+02:00</buyout_date>
+    <buyout_sum>90</buyout_sum>
+    <force_sale_date>2024-07-07T00:00:00+02:00</force_sale_date>
+    <force_sale_sum>130</force_sale_sum>
+    <description>Nice laptop</description>
+  </ThingDataTable>
+</LombardDataSet>

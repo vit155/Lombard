@@ -1,0 +1,11 @@
+<LombardDataSet xmlns="http://tempuri.org/LombardDataSet.xsd">
+  <CustomerDataTable>
+    <tax_id>11111111</tax_id>
+    <first_name>Іван</first_name>
+    <last_name>Пролесков</last_name>
+    <city>Львів</city>
+    <address>під Дубом, 7а</address>
+    <passport>МТ 457893</passport>
+    <contact_data>095 733 21 15</contact_data>
+  </CustomerDataTable>
+</LombardDataSet>
