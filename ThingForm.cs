@@ -45,7 +45,7 @@ namespace Lombard
         private List<Control> _update_controls_array = new List<Control>();  //fields for update
 
         private int _index = 0;
-        private bool show_only_outdated = false;
+        private bool show_only_outdated = false;  // flag to show only outdated  things
         private bool show_for_tax_id_only = false;
 
 
