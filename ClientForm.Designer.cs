@@ -281,7 +281,7 @@
             this.add_button.Name = "add_button";
             this.add_button.Size = new System.Drawing.Size(193, 49);
             this.add_button.TabIndex = 17;
-            this.add_button.Text = "Додати клиента";
+            this.add_button.Text = "Додати клієнта";
             this.add_button.UseVisualStyleBackColor = false;
             this.add_button.Click += new System.EventHandler(this.add_button_Click);
             // 
@@ -292,7 +292,7 @@
             this.update_button.Name = "update_button";
             this.update_button.Size = new System.Drawing.Size(221, 49);
             this.update_button.TabIndex = 18;
-            this.update_button.Text = "Оновити дані клиента";
+            this.update_button.Text = "Оновити дані клієнта";
             this.update_button.UseVisualStyleBackColor = false;
             this.update_button.Click += new System.EventHandler(this.update_button_Click);
             // 
@@ -303,7 +303,7 @@
             this.delete_button.Name = "delete_button";
             this.delete_button.Size = new System.Drawing.Size(208, 49);
             this.delete_button.TabIndex = 19;
-            this.delete_button.Text = "Видалити клиента";
+            this.delete_button.Text = "Видалити клієнта";
             this.delete_button.UseVisualStyleBackColor = false;
             this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
