@@ -339,9 +339,9 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(699, 108);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(217, 20);
+            this.label10.Size = new System.Drawing.Size(194, 20);
             this.label10.TabIndex = 12;
-            this.label10.Text = "Дата примусового продажу";
+            this.label10.Text = "Кінцева дата зберігання";
             // 
             // label11
             // 
@@ -412,32 +412,36 @@
             // 
             // buyout_sum_textBox
             // 
-            this.buyout_sum_textBox.Location = new System.Drawing.Point(933, 62);
+            this.buyout_sum_textBox.Location = new System.Drawing.Point(939, 62);
             this.buyout_sum_textBox.Name = "buyout_sum_textBox";
             this.buyout_sum_textBox.Size = new System.Drawing.Size(200, 26);
             this.buyout_sum_textBox.TabIndex = 21;
+            this.buyout_sum_textBox.TextChanged += new System.EventHandler(this.buyout_sum_textBox_TextChanged);
             // 
             // force_sale_date_dateTimePicker
             // 
-            this.force_sale_date_dateTimePicker.Location = new System.Drawing.Point(933, 101);
+            this.force_sale_date_dateTimePicker.Location = new System.Drawing.Point(939, 101);
             this.force_sale_date_dateTimePicker.Name = "force_sale_date_dateTimePicker";
             this.force_sale_date_dateTimePicker.Size = new System.Drawing.Size(200, 26);
             this.force_sale_date_dateTimePicker.TabIndex = 22;
+            this.force_sale_date_dateTimePicker.ValueChanged += new System.EventHandler(this.force_sale_date_dateTimePicker_ValueChanged);
             // 
             // force_sale_sum_textBox
             // 
-            this.force_sale_sum_textBox.Location = new System.Drawing.Point(933, 153);
+            this.force_sale_sum_textBox.Location = new System.Drawing.Point(939, 153);
             this.force_sale_sum_textBox.Name = "force_sale_sum_textBox";
             this.force_sale_sum_textBox.Size = new System.Drawing.Size(200, 26);
             this.force_sale_sum_textBox.TabIndex = 23;
+            this.force_sale_sum_textBox.TextChanged += new System.EventHandler(this.force_sale_sum_textBox_TextChanged);
             // 
             // description_textBox
             // 
-            this.description_textBox.Location = new System.Drawing.Point(933, 193);
+            this.description_textBox.Location = new System.Drawing.Point(939, 193);
             this.description_textBox.Multiline = true;
             this.description_textBox.Name = "description_textBox";
             this.description_textBox.Size = new System.Drawing.Size(200, 90);
             this.description_textBox.TabIndex = 24;
+            this.description_textBox.TextChanged += new System.EventHandler(this.description_textBox_TextChanged);
             // 
             // add_button
             // 
@@ -496,7 +500,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.asset_name_textBox);
-            this.groupBox1.Location = new System.Drawing.Point(12, 45);
+            this.groupBox1.Location = new System.Drawing.Point(18, 45);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1164, 243);
             this.groupBox1.TabIndex = 29;

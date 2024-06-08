@@ -220,5 +220,25 @@ namespace Lombard
         {
 
         }
+
+        private void buyout_sum_textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void force_sale_date_dateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void force_sale_sum_textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void description_textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
