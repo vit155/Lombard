@@ -172,6 +172,7 @@
             this.Controls.Add(this.LoadButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
             this.Text = "Ломбард";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
