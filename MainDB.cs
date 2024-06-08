@@ -61,7 +61,7 @@ namespace Lombard
             return _has_changes = true;
        
         }
-        public void acceptDBChanges()
+        public void acceptDBChanges() //accept db changes
         {
 
             _has_changes = false;
