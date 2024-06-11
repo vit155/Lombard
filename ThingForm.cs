@@ -118,6 +118,19 @@ namespace Lombard
             
             DataGridViewRow row = dataGridView1.Rows[_index];
 
+            if (issued_sum_textBox.Text.Length>0 && estimated_cost_textBox.Text.Length > 0)
+                if (Int32.Parse(issued_sum_textBox.Text) > Int32.Parse(estimated_cost_textBox.Text))
+                {
+                    MessageBox.Show("Не можна видати суму більше оцінки", "Помилка вводу", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+            if (issued_sum_textBox.Text.Length > 0 && buyout_sum_textBox.Text.Length > 0)
+                if (Int32.Parse(issued_sum_textBox.Text) >= Int32.Parse(buyout_sum_textBox.Text))
+                {
+                    MessageBox.Show("Сума викупу повинна бути більше виданой суми", "Помилка вводу", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
             for (int i = 0; i < _update_controls_array.Count; i++)
             {
