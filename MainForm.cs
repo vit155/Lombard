@@ -82,9 +82,20 @@ namespace Lombard
 
         private void ThingButton_Click(object sender, EventArgs e)
         {
-            ThingForm clientForm = new ThingForm();
-            clientForm.ShowDialog();
-            UpdateUnsavedMessage();
+            if (MainDB.GetInstance().GetMainDataset().CustomerDataTable.Rows.Count != 0)
+            {
+                ThingForm clientForm = new ThingForm();
+                clientForm.ShowDialog();
+                UpdateUnsavedMessage();
+
+            }
+            else
+            {
+                MessageBox.Show("Спочатку треба додати хоч одного клієнта", "Немає клієнтів", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                
+            }
+
+            
         }
 
         private void SaveButton_Click(object sender, EventArgs e)
