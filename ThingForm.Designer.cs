@@ -388,6 +388,8 @@
             this.estimated_cost_textBox.Name = "estimated_cost_textBox";
             this.estimated_cost_textBox.Size = new System.Drawing.Size(177, 26);
             this.estimated_cost_textBox.TabIndex = 17;
+            this.estimated_cost_textBox.TextChanged += new System.EventHandler(this.estimated_cost_textBox_TextChanged);
+            this.estimated_cost_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.estimated_cost_textBox_KeyPress);
             // 
             // acceptance_dateTimePicker
             // 
@@ -402,6 +404,7 @@
             this.issued_sum_textBox.Name = "issued_sum_textBox";
             this.issued_sum_textBox.Size = new System.Drawing.Size(177, 26);
             this.issued_sum_textBox.TabIndex = 19;
+            this.issued_sum_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.issued_sum_textBox_KeyPress);
             // 
             // buyout_date_dateTimePicker
             // 
@@ -417,6 +420,7 @@
             this.buyout_sum_textBox.Size = new System.Drawing.Size(200, 26);
             this.buyout_sum_textBox.TabIndex = 21;
             this.buyout_sum_textBox.TextChanged += new System.EventHandler(this.buyout_sum_textBox_TextChanged);
+            this.buyout_sum_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.buyout_sum_textBox_KeyPress);
             // 
             // force_sale_date_dateTimePicker
             // 
@@ -433,6 +437,7 @@
             this.force_sale_sum_textBox.Size = new System.Drawing.Size(200, 26);
             this.force_sale_sum_textBox.TabIndex = 23;
             this.force_sale_sum_textBox.TextChanged += new System.EventHandler(this.force_sale_sum_textBox_TextChanged);
+            this.force_sale_sum_textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.force_sale_sum_textBox_KeyPress);
             // 
             // description_textBox
             // 

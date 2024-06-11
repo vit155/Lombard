@@ -240,5 +240,45 @@ namespace Lombard
         {
 
         }
+
+        private void estimated_cost_textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void accept_numbers_only(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+
+        }
+
+        private void estimated_cost_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            accept_numbers_only(sender, e);
+        }
+
+        private void issued_sum_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            accept_numbers_only(sender, e);
+        }
+
+        private void buyout_sum_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            accept_numbers_only(sender, e);
+        }
+
+        private void force_sale_sum_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            accept_numbers_only(sender, e);
+        }
     }
 }
